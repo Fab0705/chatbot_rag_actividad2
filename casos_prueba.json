@@ -1,0 +1,51 @@
+[
+  {
+    "pregunta": "¿Qué modelo se utiliza para generar los embeddings y cuántas dimensiones tiene cada vector?",
+    "respuesta_esperada": "Se utiliza gemini-embedding-001 y cada embedding tiene 3072 dimensiones.",
+    "en_documento": true,
+    "observacion": "La guía lo indica en el objetivo, el apartado de conceptos y el Paso 5.",
+    "fragmentos_fuente_esperados": [
+      1,
+      2,
+      5
+    ],
+    "score_vectorial_observado": null
+  },
+  {
+    "pregunta": "¿Qué nombre tiene el índice vectorial y qué campo indexa?",
+    "respuesta_esperada": "El índice se llama vector_index y se crea sobre el campo embedding.",
+    "en_documento": true,
+    "observacion": "La guía especifica name=vector_index y path=embedding.",
+    "fragmentos_fuente_esperados": [
+      6,
+      7
+    ],
+    "score_vectorial_observado": null
+  },
+  {
+    "pregunta": "¿Cuántos fragmentos recupera la aplicación por defecto y cuántos candidatos evalúa?",
+    "respuesta_esperada": "La configuración de la guía devuelve 5 fragmentos (k=5) y evalúa 100 candidatos (numCandidates=100).",
+    "en_documento": true,
+    "observacion": "Se describe en el Paso 10.",
+    "fragmentos_fuente_esperados": [
+      7
+    ],
+    "score_vectorial_observado": null
+  },
+  {
+    "pregunta": "¿Qué proveedor de nube utiliza el clúster MongoDB Atlas del estudiante?",
+    "respuesta_esperada": "El documento no contiene información suficiente para responder esta pregunta.",
+    "en_documento": false,
+    "observacion": "La guía no fija un proveedor cloud; se debe comprobar que el chatbot se abstenga.",
+    "fragmentos_fuente_esperados": [],
+    "score_vectorial_observado": null
+  },
+  {
+    "pregunta": "¿Cuál es el presupuesto mensual exacto asignado al desarrollo de la aplicación?",
+    "respuesta_esperada": "El documento no contiene información suficiente para responder esta pregunta.",
+    "en_documento": false,
+    "observacion": "La guía no indica presupuesto mensual.",
+    "fragmentos_fuente_esperados": [],
+    "score_vectorial_observado": null
+  }
+]

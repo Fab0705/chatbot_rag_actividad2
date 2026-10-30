@@ -1,0 +1,6 @@
+﻿pregunta,en_documento,respuesta_esperada,fragmentos_fuente_esperados,respuesta_observada,fragmentos_recuperados,scores_observados,k,observaciones
+¿Qué modelo se utiliza para generar los embeddings y cuántas dimensiones tiene cada vector?,Sí,Se utiliza gemini-embedding-001 y cada embedding tiene 3072 dimensiones.,"1,2,5",,,,5,"La guía lo indica en el objetivo, el apartado de conceptos y el Paso 5."
+¿Qué nombre tiene el índice vectorial y qué campo indexa?,Sí,El índice se llama vector_index y se crea sobre el campo embedding.,"6,7",,,,5,La guía especifica name=vector_index y path=embedding.
+¿Cuántos fragmentos recupera la aplicación por defecto y cuántos candidatos evalúa?,Sí,La configuración de la guía devuelve 5 fragmentos (k=5) y evalúa 100 candidatos (numCandidates=100).,7,,,,5,Se describe en el Paso 10.
+¿Qué proveedor de nube utiliza el clúster MongoDB Atlas del estudiante?,No,El documento no contiene información suficiente para responder esta pregunta.,,,,,5,La guía no fija un proveedor cloud; se debe comprobar que el chatbot se abstenga.
+¿Cuál es el presupuesto mensual exacto asignado al desarrollo de la aplicación?,No,El documento no contiene información suficiente para responder esta pregunta.,,,,,5,La guía no indica presupuesto mensual.
